@@ -14,4 +14,4 @@ Each letter of the plaintext is encrypted with a Caesar cipher shifted by the al
 
 - Implement encryption and decryption functions for both Caesar and Vigenere ciphers.
 - Provide a command-line interface (CLI) for running these functions.
-- Ensure code quality and adherence to C11 s
+- Ensure code quality and adherence to C11 standard.
