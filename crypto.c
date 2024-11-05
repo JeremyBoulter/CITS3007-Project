@@ -98,8 +98,6 @@ void vigenere_decrypt(char range_low, char range_high, const char *key, const ch
     plain_text[strlen(cipher_text)] = '\0';
 }
 
-
-
 int cli(int argc, char ** argv) {
     // Check the number of arguments
     if (argc != 4) {
@@ -181,7 +179,7 @@ int cli(int argc, char ** argv) {
     return 0;
 }
 
-int main() {
+int test() {
     // Test arguments
     char *argv1[] = {"program", "vigenere-encrypt", "KEY", "HELLO"};
     char *argv2[] = {"program", "vigenere-decrypt", "KEY", "RIJVS"};
@@ -199,4 +197,12 @@ int main() {
     cli(4, argv4);
 
     return 0;
+}
+
+int main(int argc, char **argv) {
+    if (argc == 4) {
+        return cli(argc, argv);
+    } else {
+        return test();
+    }
 }
